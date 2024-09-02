@@ -1,0 +1,86 @@
+# Catatan Vital
+
+
+## Akta Kelahiran
+
+Akta kelahiran Ini menghubungkan seseorang dengan dokumen resmi.
+Informasi tentang tanggal kelahiran diambil dari catatan orang tersebut. 
+Selain itu, jika institusi Anda memiliki modul Pediatri yang terinstal, 
+tanggal kelahiran akan otomatis diambil dari departemen neonatologi.
+
+Catatan: Cara terbaik untuk mengakses dan memasukkan akta kelahiran adalah melalui tindakan 
+relasi dari model orang (party). Ini akan otomatis mengisi kolom seperti nama orang dan tanggal lahir.
+
+Sebagai alternatif, akta kelahiran dapat dikelola melalui bagian Health → Demographics → Birth Certificate.
+
+Sebuah akta kelahiran menyimpan informasi berikut:
+
+- **Orang**: Nama bayi yang baru lahir (tautan ke catatan menu People)
+- **Tanggal Lahir**: Secara default, diambil dari data pasien yang ada di Party.
+- **Ibu dan Ayah**: (tautan ke catatan menu People)
+- **Institusi**: Institusi kesehatan tempat kelahiran terjadi (atau institusi kesehatan yang mengesahkan kelahiran di rumah)
+- **Kode**
+- **Negara dan Subdivisi**: Kolom ini akan otomatis terisi dengan nilai default, 
+        yaitu negara dan subdivisi (seperti provinsi) dari institusi.
+- **Observasi**
+
+Jika Anda membuat catatan akta kelahiran, catatan tersebut akan berada dalam status Draf secara default. 
+Anda dapat beralih ke status Ditandatangani dengan mengklik tombol Signed. 
+Anda akan diminta untuk mengonfirmasi bahwa Anda ingin menandatangani akta kelahiran; 
+harap dicatat bahwa penandatanganan akta kelahiran tidak dapat dibatalkan. 
+Penandatanganan akta kelahiran akan menambahkan nama penandatangan (profesional kesehatan) serta tanggal dan waktu proses penandatanganan.
+
+## Akta Kematian
+
+Akta kematian adalah dokumen yang dikunci, karena memiliki signifikansi hukum, administratif, demografis, dan epidemiologis.
+
+Akta kematian bekerja dengan cara yang sangat mirip dengan akta kelahiran, 
+tetapi menyimpan lebih banyak informasi tentang penyebab dan keadaan kematian. 
+Cara terbaik untuk mengakses akta kematian seseorang adalah dengan menggunakan 
+tindakan terkait dari model Party (lihat bagian akta kelahiran). 
+Sebagai alternatif, akta kematian dapat diakses melalui bagian Health → Demographics → Death Certificate.
+
+Sebuah akta kematian menyimpan informasi berikut:
+
+### Bagian Utama:
+
+- **Orang**: Nama orang yang meninggal (tautan ke catatan orang)
+- **Tanggal**: Tanggal Kematian, termasuk jam dan menit.
+
+### Bagian Tempat:
+
+- **Tempat**: Detail tentang tempat orang meninggal (di rumah, di tempat kerja, di tempat umum, di institusi kesehatan)
+- **Detail tentang Tempat**
+- **DU**: Bangunan/alamat yang tepat (tautan ke catatan Unit Domisili)
+- **Institusi**: Institusi kesehatan tempat orang meninggal (atau institusi kesehatan yang mengesahkan kematian yang terjadi di rumah, di tempat kerja, atau di tempat umum)
+- **Sektor Operasional**: Sektor Operasional di mana kematian terjadi.
+- **Negara dan Subdivisi**: Misalnya provinsi. Kolom ini otomatis terisi dengan informasi alamat dari institusi kesehatan.
+
+### Bagian Penyebab:
+
+- **Penyebab**: Penyebab langsung kematian (tautan ke catatan Penyakit)
+- **Kondisi Dasar**: Kondisi medis yang menyebabkan kematian, dalam urutan kronologis.
+
+### Bagian Lainnya:
+
+- **Jenis Kematian**: Pilih antara “Alami”, “Bunuh Diri”, “Pembunuhan”, “Tidak Ditentukan”, atau “Menunggu Investigasi”
+- **Autopsi**: Tandai jika autopsi telah dilakukan
+- **Kode**: Identifikasi unik untuk akta tersebut. Format/nomenklatur tergantung negara.
+- **Observasi**
+
+Jika Anda membuat catatan akta kematian, 
+catatan tersebut akan berada dalam status Draft secara default. 
+Anda dapat beralih ke status Ditandatangani dengan mengklik tombol Signed. 
+Anda akan diminta untuk mengonfirmasi bahwa Anda ingin menandatangani akta kematian; 
+harap dicatat bahwa penandatanganan akta kematian tidak dapat dibatalkan. 
+Penandatanganan akta kematian akan menambahkan nama penandatangan (profesional kesehatan) 
+serta tanggal dan waktu proses penandatanganan.
+
+## Tanda Tangan Digital
+
+Sangat disarankan untuk menggunakan tanda tangan digital untuk menandatangani akta kematian. 
+Salus memiliki fungsionalitas untuk memverifikasi setiap perubahan pada dokumen. 
+Ini juga memungkinkan Anda untuk menggunakan kunci pribadi Anda untuk menandatangani dokumen, 
+memberikan nilai hukum di banyak negara. 
+
+Setelah ditandatangani, dokumen dapat diverifikasi terhadap orang yang akhirnya menandatangani akta tersebut.

@@ -1,0 +1,21 @@
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Lebar penuh kontainer */
+  }
+  
+  .video-container iframe {
+    width: 750px;
+    height: 500px; /* Sesuaikan tinggi sesuai kebutuhan */
+    border: none; /* Hapus border default */
+  }
+
+  @media (max-width: 768px) {
+    .video-container iframe {
+      height: auto; 
+    }
+  }
+  
+  

@@ -1,0 +1,13 @@
+{
+  "index": "Introduction",
+  "masuk_login": "Login",
+  "pendaftaran": "Pendaftaran Pihak",
+  "alur_dokter": "Alur Dokter",
+  "lainnya": "Lainnya",
+  "contact": {
+    "title": "Contact",
+    "type": "page",
+    "href": "https://gemacendekia.co.id/",
+    "newWindow": true
+  }
+}

@@ -1,0 +1,59 @@
+import { Bleed } from 'nextra-theme-docs';
+import styles from '/pages/styles.module.css'; 
+
+# Manajemen Janji Temu dan Rawat Inap
+
+## Janji Temu
+
+### Informasi yang Disimpan per Janji Temu
+
+Setiap janji temu dapat menyimpan informasi berikut:
+
+- **ID Janji Temu**
+- **Pasien**: Pilih nama pasien yang terdaftar.
+- **Kunjungan**: Jenis Janji Temu
+- **Status**: Status saat ini dari janji temu. Misalnya, dapat menunjukkan bahwa pasien sudah melakukan check-in atau bahwa janji temu dibatalkan.
+- **Profesional Kesehatan**: Nama profesional kesehatan yang ditunjuk.
+- **Institusi**: Nama institusi. Institusi ini kemungkinan adalah pusat kesehatan.
+- **Tanggal**
+- **Urgensi**: Tingkat Keadaan Darurat
+- **Acara CalDAV**: Penjelasan mengenai Acara CalDAV
+- **Registrasi Rawat Inap**: Tautkan ke pasien yang saat ini berada di institusi.
+- **Tipe**: Rawat Inap vs. Rawat Jalan. Rawat Inap menunjukkan pasien saat ini berada di institusi.
+- **Spesialisasi**: Bidang keahlian profesional kesehatan yang ditunjuk.
+- **Informasi Tambahan**
+
+### Daftar Semua Janji Temu
+
+Dari menu utama Kesehatan, Anda memiliki opsi untuk masuk ke bagian Janji Temu. Di sini Anda melihat daftar semua janji temu yang tersimpan di sistem.
+
+- **Tab Dikonfirmasi**: Daftar ini mencerminkan semua janji temu yang ada di mana status janji temu diatur ke “dikonfirmasi”.
+- **Tab Checked In**: Daftar ini mencerminkan semua janji temu yang ada di mana status janji temu diatur ke “Checked in”.
+- **Tab Bebas**: Daftar ini mencerminkan semua slot waktu yang tersedia di mana Anda dapat membuat janji temu baru.
+- **Tab Tidak Hadir**: Daftar ini mencerminkan semua janji temu yang ada di mana status janji temu diatur ke “Tidak Hadir”.
+- **Tab Semua**: Daftar ini menggabungkan semua daftar yang disebutkan di atas.
+
+### Kalender Janji Temu
+
+Subbagian Kalender Janji Temu memungkinkan Anda untuk menampilkan semua janji temu yang tersimpan di sistem dalam tampilan kalender.
+
+### Laporan Janji Temu
+
+Subbagian Laporan Janji Temu memungkinkan Anda untuk menampilkan semua janji temu dari seorang profesional kesehatan dalam periode waktu tertentu.
+
+### Daftar Janji Temu untuk Pasien Tertentu
+
+Untuk mengakses daftar semua janji temu untuk pasien tertentu, biasanya Anda mulai dari catatan pasien. Cukup klik tombol Relate dan pilih Janji Temu.
+
+## Rawat Inap
+
+Dari menu utama, Anda akan memiliki akses ke area Rawat Inap. Dari sini, Anda akan mengelola segala tindakan terkait dengan penerimaan atau pemulangan pasien dari rumah sakit.
+
+Saat Anda membuat catatan Rawat Inap baru, ada beberapa tab yang akan membantu Anda mengumpulkan informasi lebih lanjut:
+
+- **Data Administratif**: Di bagian ini Anda dapat memasukkan semua informasi administratif terkait penerimaan pasien.
+- **Nutrisi**: Informasi di bagian ini membantu pusat rumah sakit untuk mengetahui lebih lanjut tentang diet pasien, keyakinan, dll.
+- **Rencana Pengobatan**: Semua informasi yang dimasukkan di sini terkait dengan pengobatan selama penerimaan (indikasi, periode perawatan, dosis, dll.).
+- **Rencana Perawatan**: Di sini Anda akan memasukkan semua data tentang rencana perawatan keperawatan dan rencana pemulangan.
+
+Untuk informasi lebih lanjut tentang rawat inap, silakan merujuk ke bab Manajemen Rawat Inap.

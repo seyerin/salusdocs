@@ -1,0 +1,95 @@
+# Manajemen Rawat Inap
+
+## Pengantar Manajemen Rawat Inap
+
+Jika seorang pasien tidak hanya berkonsultasi dengan dokter (rawat jalan) 
+tetapi juga tinggal di rumah sakit (rawat inap), Anda harus mengelola lebih banyak informasi tentang pasien ini. 
+Informasi ini disimpan dalam catatan Rawat Inap yang dapat ditemukan di bagian Health → Hospitalization. 
+Untuk setiap kunjungan ke rumah sakit, buatlah catatan Rawat Inap yang terpisah.
+
+
+## Proses Penerimaan
+
+Saat pasien menjadi rawat inap, Anda pada dasarnya memerlukan dua hal untuk menangani penerimaan: 
+catatan Pasien dan catatan Rawat Inap. 
+Jika catatan Pasien belum ada, buatlah terlebih dahulu. Kemudian, buatlah catatan Rawat Inap.
+
+### Tab Data Administratif
+
+Di tab Data Administratif, Anda dapat menyimpan data berikut:
+
+- **Kode Registrasi**
+- **Pasien**: Tautkan ke catatan Pasien (wajib).
+- **Tempat Tidur Rumah Sakit**: Tautkan ke tempat tidur (wajib). Untuk detail, lihat bagian “Menetapkan Tempat Tidur” di bawah.
+- **Tanggal Rawat Inap**: Wajib
+- **Tanggal Keluar yang Diharapkan**: Wajib
+- **Acara Kalender**
+- **Dokter Penanggung Jawab**
+- **Dokter Bedah**
+- **Jenis Penerimaan**: Wajib
+- **Alasan Penerimaan**
+- **Informasi Tambahan**
+- **Riwayat Transfer**
+
+### Menetapkan Tempat Tidur
+
+Untuk alasan yang jelas, Anda tidak dapat merawat pasien tanpa menetapkan tempat tidur yang tersedia. 
+Ini dilakukan di kolom Hospital Bed, di mana Anda menautkan catatan Rawat Inap ke catatan Beds.
+
+Ada dua cara utama untuk melakukan ini:
+
+1. Jika Anda sudah mengetahui ID tempat tidur untuk pasien ini, Anda dapat langsung mengetikkan ID tersebut. Begitu Anda mengetik, sistem akan menawarkan ID yang sesuai untuk dipilih.
+2. Jika Anda belum mengetahui ID tempat tidur dan ingin memeriksa tempat tidur yang tersedia terlebih dahulu, klik tombol di sisi kanan. Ini akan menampilkan daftar semua tempat tidur termasuk status ketersediaan mereka (gratis, terpakai, dipesan).
+
+Setelah tempat tidur dipilih, sistem akan memberi Anda opsi untuk mengonfirmasi penerimaan dan, jika tidak ada kesalahan, status akan berubah menjadi “dikonfirmasi”.
+
+Penting untuk ditekankan bahwa pada titik ini jika kita memeriksa bagian tempat tidur, tempat tidur khusus yang baru saja kami tetapkan akan memiliki status “dipesan” dan akan berubah menjadi “terpakai” pada saat kita mengonfirmasi penerimaan.
+
+### Tab Nutrisi
+
+Di tab Nutrisi, Anda dapat menemukan semua informasi tentang kebiasaan makan dan diet yang harus diikuti pasien:
+
+- **Keyakinan**: Beberapa agama memiliki aturan khusus mengenai konsumsi makanan. Misalnya, orang Yahudi dan Muslim tidak diperbolehkan makan daging babi. Oleh karena itu, mungkin berguna untuk menunjukkan keyakinan pasien di sini. Harap dicatat bahwa ini adalah kolom pencarian di mana Anda dapat memilih entri yang ada atau membuat entri baru.
+- **Vegetarian**: Pilih dari “Tidak”, “Vegetarian”, “Lacto-Vegetarian”, “Lacto-Ovo-Vegetarian”, “Pescetarian”, atau “Vegan”.
+- **Makanan / Program Diet**: Tambahkan jumlah diet yang diperlukan. Harap dicatat bahwa kolom Diet adalah kolom pencarian untuk catatan Diet Terapeutik di mana Anda dapat memilih entri yang ada atau membuat entri baru.
+- **Catatan / Arahan Nutrisi Lainnya**
+
+### Mengelola Keyakinan
+
+Catatan Keyakinan menyimpan informasi berikut:
+
+- **Keyakinan**: Nama keyakinan.
+- **Kode**: Kode yang mungkin Anda gunakan di institusi kesehatan Anda.
+- **Deskripsi**: Informasi tentang aturan makanan terkait keyakinan ini.
+
+### Mengelola Diet Terapeutik
+
+Catatan Diet Terapeutik menyimpan informasi berikut:
+
+- **Tipe Diet**
+- **Kode**
+- **Deskripsi dan Indikasi Diet**
+
+### Tab Rencana Pengobatan
+
+Di tab Rencana Pengobatan terdapat daftar semua obat (yaitu aplikasi obat) untuk pasien selama rawat inap. Setiap entri dalam daftar ini adalah catatan Pengobatan Rawat Inap, yang terdiri dari data berikut:
+
+#### Tab Informasi Umum:
+
+- **Obat**
+- **Indikasi**
+- **Periode Pengobatan Mulai dan Akhir**
+- **Formulir Administrasi**
+- **Rute Administrasi**
+- **Dosis**
+- **Waktu Administrasi**
+
+#### Tab Informasi Tambahan:
+
+- **Status**: Aktif, Kursus Selesai, dan/atau Dihentikan
+- **Reaksi Merugikan dan Catatan**
+- **Riwayat Log**: Setiap entri mencatat Tanggal & Waktu, Profesional Kesehatan, Dosis, Unit Dosis, dan Keterangan.
+
+### Tab Rencana Perawatan
+
+Di tab Rencana Perawatan terdapat dua kolom teks yang memungkinkan Anda untuk memasukkan semua informasi terkait dengan Rencana Keperawatan dan Rencana Pemulangan.

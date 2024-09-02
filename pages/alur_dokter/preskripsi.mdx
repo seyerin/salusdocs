@@ -1,0 +1,70 @@
+import { Bleed } from 'nextra-theme-docs';
+import styles from '/pages/styles.module.css'; 
+
+
+# Resep
+
+## Tentang Resep
+
+Resep dapat ditemukan di bagian Health → Prescriptions di Salus. 
+Namun, karena seringkali Anda hanya perlu melihat resep untuk pasien tertentu, 
+cara yang disarankan adalah membuka catatan Pasien dan beralih ke Prescriptions menggunakan tombol Relate.
+
+Berikut adalah video untuk membuat Preskripsi:
+
+        <Bleed>
+            <div className={styles['video-container']}>
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/5O-8VIUsek8?si=4KGf2GPN-en8QK77" 
+               title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+               gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>             
+        </Bleed>
+
+
+
+## Informasi yang Disimpan dalam Resep
+
+Setiap catatan Resep menyimpan informasi umum sebagai berikut:
+
+- **Pasien**: Tautkan ke pasien (wajib)
+- **ID Resep**
+- **Tanggal Resep**
+- **Diberikan oleh**: Tautkan ke profesional kesehatan
+- **Apotek**: Tautkan ke apotek (misalnya, catatan Party dengan flag Apotek yang diatur)
+- **Peringatan Kehamilan**
+- **Resep Diverifikasi**
+
+Informasi tentang obat-obatan dapat ditemukan di bagian Garis Resep. Setiap Garis Resep terdiri dari bidang berikut:
+
+- **Obat**: Tautkan ke Obat
+- **Indikasi**: Tautkan ke catatan Pathology Info
+- **Izinkan Substitusi**
+- **Cetak**
+- **Formulir**: Tautkan ke catatan Form Obat
+- **Rute Administrasi**: Tautkan ke catatan Form Obat lainnya
+- **Mulai**: Tanggal dan waktu
+- **Akhir**: Tanggal dan waktu
+- **Dosis**
+- **Unit Dosis**: Pilih unit dosis yang ada atau buat yang baru
+- **Jumlah**
+- **Frekuensi**
+- **Jam Administrasi**
+- **Unit**: Pilih dari “Detik”, “Menit”, “Jam”, “Hari”, “Minggu”, atau “Saat dibutuhkan”
+- **PRN**: Singkatan dari pro re nata (= digunakan sesuai kebutuhan)
+- **Durasi Pengobatan**
+- **Periode Pengobatan**: Pilih dari “Menit”, “Jam”, “Hari”, “Minggu”, “Bulan”, “Tahun”, atau “Tak Terbatas”
+- **Tinjauan**: Tanggal dan waktu
+- **Unit**
+- **Pengulangan #**
+- **Komentar**
+
+Catatan: Hanya sebagian dari bidang ini yang terlihat di tampilan daftar, jadi pastikan untuk membuka Garis Resep dalam formulir untuk mengakses semua bidang.
+
+## Stok Resep
+
+Resep dapat dilacak dan diinventarisasi melalui Pengelolaan Stok.
+
+Untuk membuat pergerakan stok baru dengan cepat, klik kanan pada Prescriptions → Actions → Create Prescription Stock Move. 
+Untuk melihat pergerakan stok sebelumnya, klik kanan pada Prescriptions → Relate → "Stock Moves [readonly]".
+
+Catatan: Jangan membuat Pergerakan Stok baru dari tampilan Relate.
